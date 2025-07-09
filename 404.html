@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Redirecting...</title>
-    <script>
-      // Get the path from the URL and redirect to index.html with that path
-      const path = window.location.pathname;
-      window.location.href = '/Sahayak-Agent-Ai/index.html' + path;
-    </script>
-  </head>
-  <body>
-    <h1>Redirecting...</h1>
-    <p>If you're not redirected automatically, <a href="/Sahayak-Agent-Ai/index.html">click here</a>.</p>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <script>
+    sessionStorage.redirect = location.pathname;
+    window.location.replace(
+      '/Sahayak-Agent-Ai/index.html' + 
+      (location.pathname.startsWith('/Sahayak-Agent-Ai') 
+        ? location.pathname.split('/Sahayak-Agent-Ai')[1] 
+        : location.pathname)
+    );
+  </script>
+</head>
+<body>
+  Redirecting to app...
+</body>
 </html>
