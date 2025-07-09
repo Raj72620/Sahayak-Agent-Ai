@@ -3,7 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
+ "homepage": "https://raj72620.github.io/Sahayak-Agent-Ai",
+ "scripts": {
     "dev": "vite",
     "build": "vite build",
     "build:dev": "vite build --mode development",
