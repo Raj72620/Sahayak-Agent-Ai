@@ -15,7 +15,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@lovable_dev" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-    <script type="module" crossorigin src="/Sahayak-Agent-Ai/assets/index-BodMvwsU.js"></script>
+    <script type="module" crossorigin src="/Sahayak-Agent-Ai/assets/index-CQf0wgc1.js"></script>
     <link rel="stylesheet" crossorigin href="/Sahayak-Agent-Ai/assets/index-BB3jbGth.css">
   </head>
 
@@ -23,5 +23,16 @@
     <div id="root"></div>
 
 
+
   </body>
+  <script>
+  // Handle the redirect
+  (function(){
+    const redirect = sessionStorage.redirect;
+    delete sessionStorage.redirect;
+    if (redirect && redirect != location.pathname) {
+      history.replaceState(null, null, redirect);
+    }
+  })();
+</script>
 </html>
